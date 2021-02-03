@@ -171,7 +171,7 @@ overflow-y: hidden;
 
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 60%;
     margin: 55px auto;
 
 }
@@ -183,18 +183,21 @@ h2.title {
     text-align: center;
     height: auto;
     width: calc(100% / 3);
+    width: 100%;
     
 }
 #card-title {
     text-align: center;
     background-color: #ddd;
-    height: 48px;
+    height: 6vh;
     border: 1px solid black;
 
 }
 #card-body {
     height: 251px;
     border: 1px solid black;
+    width: 20vw;
+
     
 }
 #description {
@@ -202,6 +205,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 20px;
+width: 100%;
 }
 
 .list-style-none{
@@ -248,13 +252,23 @@ footer {
 
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width:90px) {
     #product-card {
-        flex-wrap: wrap;
-        height: fill;
+       display: flex;
+       flex-direction: column;
       }
       #card {
-        margin: 60px;
+        /* margin: 60px; */
         min-width: 300px;
        }
+       #card-title {
+        text-align: center;
+        background-color: #ddd;
+        height: 6vh;
+        border: 1px solid black;
+    
+}
+#description {
+    width:6vh;
+}
 }
